@@ -9,14 +9,18 @@ export default function HomeA() {
   return <>
       <SEO title="GreenAge – Sustainable Rotomoulding Polymers" description="LLDPE rotomoulding powders engineered for performance, consistency, and sustainability. Explore Butene, Hexene and Ripple grades." canonical="/" />
       <main>
-        <section className="relative min-h-[70vh] grid place-items-center overflow-hidden">
-          <div className="absolute inset-0 z-0 pointer-events-none">
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[177.78vh] h-[100vh] min-w-full min-h-full">
-              <iframe src="https://www.youtube.com/embed/Xp3nr5F1w-c?autoplay=1&mute=1&controls=0&loop=1&playlist=Xp3nr5F1w-c&modestbranding=1&playsinline=1&rel=0" title="GreenAge hero background video" allow="autoplay; encrypted-media; picture-in-picture" referrerPolicy="strict-origin-when-cross-origin" loading="lazy" className="w-full h-full" />
-            </div>
+        <section className="relative min-h-[70vh] grid place-items-center overflow-hidden w-full">
+          <div className="absolute inset-0 z-0 pointer-events-none w-full h-full">
+            <iframe 
+              src="https://www.youtube.com/embed/Xp3nr5F1w-c?autoplay=1&mute=1&controls=0&loop=1&playlist=Xp3nr5F1w-c&modestbranding=1&playsinline=1&rel=0" 
+              title="GreenAge hero background video" 
+              allow="autoplay; encrypted-media; picture-in-picture" 
+              referrerPolicy="strict-origin-when-cross-origin" 
+              loading="lazy" 
+              className="w-full h-full object-cover" 
+              style={{ minWidth: '100vw', minHeight: '100%' }}
+            />
           </div>
-          
-          
         </section>
 
         <RevealOnScroll className="container py-16">
@@ -121,6 +125,53 @@ export default function HomeA() {
                 </div>)}
             </div>
           </div>
+        </RevealOnScroll>
+
+        <RevealOnScroll>
+          <section aria-label="Testimonials" className="py-16 bg-muted/40">
+            <div className="container">
+              <h2 className="font-heading text-3xl mb-8">What our customers say</h2>
+              <div className="grid md:grid-cols-3 gap-6">
+                {[
+                  {
+                    quote: "We rely on GreenAge for consistent quality. Their support team is fast and helpful.",
+                    name: "Anika Sharma",
+                    role: "Plant Manager, AquaWorks",
+                    img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop"
+                  },
+                  {
+                    quote: "Great mechanical performance and UV stability—perfect for outdoor parts.",
+                    name: "Karthik Rao", 
+                    role: "Procurement Lead, Rototech",
+                    img: "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?q=80&w=400&auto=format&fit=crop"
+                  },
+                  {
+                    quote: "Ripple finish elevated our furniture line. Customers love the look and feel.",
+                    name: "Priya Nair",
+                    role: "Design Manager, SitWell", 
+                    img: "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=400&auto=format&fit=crop"
+                  }
+                ].map(t => (
+                  <Card key={t.name} className="hover-scale">
+                    <CardContent className="p-6">
+                      <Quote className="text-primary mb-4" size={24} />
+                      <p className="text-foreground/80 mb-4">{t.quote}</p>
+                      <div className="flex items-center gap-3">
+                        <Avatar className="h-12 w-12">
+                          <AvatarImage src={t.img} alt={`${t.name} portrait`} loading="lazy" />
+                          <AvatarFallback>{t.name[0]}</AvatarFallback>
+                        </Avatar>
+                        <div>
+                          <div className="font-medium">{t.name}</div>
+                          <div className="text-sm text-foreground/60">{t.role}</div>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          </section>
         </RevealOnScroll>
       </main>
     </>;
