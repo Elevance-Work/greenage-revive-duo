@@ -9,16 +9,25 @@ export default function HomeA() {
   return <>
       <SEO title="GreenAge – Sustainable Rotomoulding Polymers" description="LLDPE rotomoulding powders engineered for performance, consistency, and sustainability. Explore Butene, Hexene and Ripple grades." canonical="/" />
       <main>
-        <section className="relative min-h-[70vh] grid place-items-center overflow-hidden w-full">
-          <div className="absolute inset-0 z-0 pointer-events-none w-full h-full">
+        <section className="relative min-h-[70vh] w-screen -mx-[50vw] left-1/2 overflow-hidden">
+          <div className="absolute inset-0 z-0 pointer-events-none">
             <iframe 
-              src="https://www.youtube.com/embed/Xp3nr5F1w-c?autoplay=1&mute=1&controls=0&loop=1&playlist=Xp3nr5F1w-c&modestbranding=1&playsinline=1&rel=0" 
+              src="https://www.youtube.com/embed/Xp3nr5F1w-c?autoplay=1&mute=1&controls=0&loop=1&playlist=Xp3nr5F1w-c&modestbranding=1&playsinline=1&rel=0&showinfo=0&iv_load_policy=3&disablekb=1&fs=0&cc_load_policy=0&hl=en&color=white&theme=light" 
               title="GreenAge hero background video" 
-              allow="autoplay; encrypted-media; picture-in-picture" 
+              allow="autoplay; encrypted-media" 
               referrerPolicy="strict-origin-when-cross-origin" 
               loading="lazy" 
-              className="w-full h-full object-cover" 
-              style={{ minWidth: '100vw', minHeight: '100%' }}
+              className="w-full h-full scale-150 origin-center"
+              style={{ 
+                position: 'absolute',
+                top: '50%',
+                left: '50%',
+                transform: 'translate(-50%, -50%) scale(1.5)',
+                minWidth: '177.78vh',
+                minHeight: '100vh',
+                width: '177.78vh',
+                height: '100vh'
+              }}
             />
           </div>
         </section>
