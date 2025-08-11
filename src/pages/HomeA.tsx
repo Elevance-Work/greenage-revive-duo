@@ -12,7 +12,7 @@ export default function HomeA() {
               <iframe src="https://www.youtube.com/embed/Xp3nr5F1w-c?autoplay=1&mute=1&controls=0&loop=1&playlist=Xp3nr5F1w-c&modestbranding=1&playsinline=1&rel=0" title="GreenAge hero background video" allow="autoplay; encrypted-media; picture-in-picture" referrerPolicy="strict-origin-when-cross-origin" loading="lazy" className="w-full h-full" />
             </div>
           </div>
-          <div className="absolute inset-0 z-[1] bg-gradient-to-r from-background/80 to-background/40" />
+          
           
         </section>
 
