@@ -68,9 +68,12 @@ export default function HomeA() {
                 <div className="md:col-span-7 self-center">
                   <h2 className="font-heading text-2xl">View Our First Industry Magazine</h2>
                   <p className="mt-2 text-foreground/70">Expanding Horizons out now.</p>
-                  <div className="mt-4">
+                  <div className="mt-4 flex flex-wrap gap-3">
                     <Button asChild size="lg" variant="hero">
                       <Link to="/news">View magazine</Link>
+                    </Button>
+                    <Button asChild size="lg" variant="outline">
+                      <Link to="/products">View brochure</Link>
                     </Button>
                   </div>
                 </div>
