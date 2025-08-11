@@ -1,6 +1,9 @@
 import SEO from "@/components/SEO";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { Quote } from "lucide-react";
 import { Link } from "react-router-dom";
 export default function HomeA() {
   return <>

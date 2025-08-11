@@ -2,6 +2,9 @@ import SEO from "@/components/SEO";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { Quote } from "lucide-react";
 import heroB from "@/assets/hero-b.jpg";
 import { Link } from "react-router-dom";
 
@@ -120,8 +123,74 @@ export default function HomeB() {
             </div>
           </section>
         </RevealOnScroll>
+        <RevealOnScroll>
+          <section aria-label="Testimonials" className="py-16 bg-primary/5">
+            <div className="container">
+              <div className="flex items-center justify-between mb-6">
+                <h2 className="font-heading text-3xl">What our customers say</h2>
+              </div>
+              <Carousel opts={{ align: "start" }}>
+                <CarouselContent>
+                  {[
+                    {
+                      quote:
+                        "We rely on GreenAge for consistent quality. Their support team is fast and helpful.",
+                      name: "Anika Sharma",
+                      role: "Plant Manager, AquaWorks",
+                      img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop",
+                    },
+                    {
+                      quote:
+                        "Great mechanical performance and UV stability—perfect for outdoor parts.",
+                      name: "Karthik Rao",
+                      role: "Procurement Lead, Rototech",
+                      img: "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?q=80&w=400&auto=format&fit=crop",
+                    },
+                    {
+                      quote:
+                        "Ripple finish elevated our furniture line. Customers love the look and feel.",
+                      name: "Priya Nair",
+                      role: "Design Manager, SitWell",
+                      img: "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=400&auto=format&fit=crop",
+                    },
+                    {
+                      quote:
+                        "Reliable supply and tight batch consistency keep our yields high.",
+                      name: "Arun Verma",
+                      role: "Operations, TankPro",
+                      img: "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=400&auto=format&fit=crop",
+                    },
+                  ].map((t) => (
+                    <CarouselItem key={t.name} className="md:basis-1/2 lg:basis-1/3">
+                      <Card className="h-full">
+                        <CardContent className="p-6 flex flex-col justify-between h-full">
+                          <div>
+                            <Quote className="text-primary mb-3" size={20} />
+                            <p className="text-foreground/80">{t.quote}</p>
+                          </div>
+                          <div className="mt-4 flex items-center gap-3">
+                            <Avatar className="h-10 w-10">
+                              <AvatarImage src={t.img} alt={`${t.name} portrait`} loading="lazy" />
+                              <AvatarFallback>{t.name[0]}</AvatarFallback>
+                            </Avatar>
+                            <div>
+                              <div className="text-sm font-medium">{t.name}</div>
+                              <div className="text-xs text-foreground/60">{t.role}</div>
+                            </div>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
+            </div>
+          </section>
+        </RevealOnScroll>
 
-      </main>
-    </>
-  );
-}
+       </main>
+     </>
+   );
+ }
