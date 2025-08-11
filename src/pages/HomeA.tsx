@@ -129,65 +129,75 @@ export default function HomeA() {
         <RevealOnScroll>
           <div className="container py-16">
             <h2 className="font-heading text-3xl mb-8 text-center">Product Categories</h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="rounded-lg p-6 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950 dark:to-blue-900 relative overflow-hidden hover-scale">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="rounded-xl p-6 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950 dark:to-blue-900 relative overflow-hidden hover-scale min-h-[200px] flex flex-col justify-between">
                 <div className="relative z-10">
-                  <p className="text-sm text-muted-foreground mb-2">Industrial Applications</p>
-                  <h3 className="font-heading text-2xl font-bold text-blue-900 dark:text-blue-100 mb-4">WATER TANKS</h3>
+                  <p className="text-sm text-blue-600 dark:text-blue-400 font-medium mb-2">Industrial Applications</p>
+                  <h3 className="font-heading text-2xl font-bold text-blue-900 dark:text-blue-100">WATER TANKS</h3>
                 </div>
-                <img 
-                  src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=400&auto=format&fit=crop" 
-                  alt="Water storage tanks" 
-                  className="absolute bottom-0 right-0 w-32 h-32 object-cover rounded-lg opacity-80"
-                />
+                <div className="absolute -bottom-4 -right-4 w-24 h-24 rounded-lg overflow-hidden shadow-lg">
+                  <img 
+                    src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=400&auto=format&fit=crop" 
+                    alt="Water storage tanks" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
               
-              <div className="rounded-lg p-6 bg-gradient-to-br from-green-50 to-green-100 dark:from-green-950 dark:to-green-900 relative overflow-hidden hover-scale">
+              <div className="rounded-xl p-6 bg-gradient-to-br from-green-50 to-green-100 dark:from-green-950 dark:to-green-900 relative overflow-hidden hover-scale min-h-[200px] flex flex-col justify-between">
                 <div className="relative z-10">
-                  <p className="text-sm text-muted-foreground mb-2">Outdoor & Garden</p>
-                  <h3 className="font-heading text-2xl font-bold text-green-900 dark:text-green-100 mb-4">FURNITURE</h3>
+                  <p className="text-sm text-green-600 dark:text-green-400 font-medium mb-2">Outdoor & Garden</p>
+                  <h3 className="font-heading text-2xl font-bold text-green-900 dark:text-green-100">FURNITURE</h3>
                 </div>
-                <img 
-                  src="https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?q=80&w=400&auto=format&fit=crop" 
-                  alt="Outdoor furniture" 
-                  className="absolute bottom-0 right-0 w-32 h-32 object-cover rounded-lg opacity-80"
-                />
+                <div className="absolute -bottom-4 -right-4 w-24 h-24 rounded-lg overflow-hidden shadow-lg">
+                  <img 
+                    src="https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?q=80&w=400&auto=format&fit=crop" 
+                    alt="Outdoor furniture" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
               
-              <div className="rounded-lg p-6 bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-950 dark:to-purple-900 relative overflow-hidden hover-scale">
+              <div className="rounded-xl p-6 bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-950 dark:to-purple-900 relative overflow-hidden hover-scale min-h-[200px] flex flex-col justify-between">
                 <div className="relative z-10">
-                  <p className="text-sm text-muted-foreground mb-2">Transportation</p>
-                  <h3 className="font-heading text-2xl font-bold text-purple-900 dark:text-purple-100 mb-4">AUTOMOTIVE</h3>
+                  <p className="text-sm text-purple-600 dark:text-purple-400 font-medium mb-2">Transportation</p>
+                  <h3 className="font-heading text-2xl font-bold text-purple-900 dark:text-purple-100">AUTOMOTIVE</h3>
                 </div>
-                <img 
-                  src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?q=80&w=400&auto=format&fit=crop" 
-                  alt="Automotive components" 
-                  className="absolute bottom-0 right-0 w-32 h-32 object-cover rounded-lg opacity-80"
-                />
+                <div className="absolute -bottom-4 -right-4 w-24 h-24 rounded-lg overflow-hidden shadow-lg">
+                  <img 
+                    src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?q=80&w=400&auto=format&fit=crop" 
+                    alt="Automotive components" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
               
-              <div className="rounded-lg p-6 bg-gradient-to-br from-orange-50 to-orange-100 dark:from-orange-950 dark:to-orange-900 relative overflow-hidden hover-scale md:col-span-2">
+              <div className="rounded-xl p-6 bg-gradient-to-br from-orange-50 to-orange-100 dark:from-orange-950 dark:to-orange-900 relative overflow-hidden hover-scale min-h-[200px] flex flex-col justify-between lg:col-span-2">
                 <div className="relative z-10">
-                  <p className="text-sm text-muted-foreground mb-2">Agriculture & Storage</p>
-                  <h3 className="font-heading text-2xl font-bold text-orange-900 dark:text-orange-100 mb-4">MATERIAL HANDLING</h3>
+                  <p className="text-sm text-orange-600 dark:text-orange-400 font-medium mb-2">Agriculture & Storage</p>
+                  <h3 className="font-heading text-2xl font-bold text-orange-900 dark:text-orange-100">MATERIAL HANDLING</h3>
                 </div>
-                <img 
-                  src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?q=80&w=400&auto=format&fit=crop" 
-                  alt="Material handling equipment" 
-                  className="absolute bottom-0 right-0 w-40 h-32 object-cover rounded-lg opacity-80"
-                />
+                <div className="absolute -bottom-4 -right-4 w-32 h-24 rounded-lg overflow-hidden shadow-lg">
+                  <img 
+                    src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?q=80&w=400&auto=format&fit=crop" 
+                    alt="Material handling equipment" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
               
-              <div className="rounded-lg p-6 bg-gradient-to-br from-red-50 to-red-100 dark:from-red-950 dark:to-red-900 relative overflow-hidden hover-scale">
+              <div className="rounded-xl p-6 bg-gradient-to-br from-red-50 to-red-100 dark:from-red-950 dark:to-red-900 relative overflow-hidden hover-scale min-h-[200px] flex flex-col justify-between">
                 <div className="relative z-10">
-                  <p className="text-sm text-muted-foreground mb-2">Infrastructure</p>
-                  <h3 className="font-heading text-2xl font-bold text-red-900 dark:text-red-100 mb-4">CONSTRUCTION</h3>
+                  <p className="text-sm text-red-600 dark:text-red-400 font-medium mb-2">Infrastructure</p>
+                  <h3 className="font-heading text-2xl font-bold text-red-900 dark:text-red-100">CONSTRUCTION</h3>
                 </div>
-                <img 
-                  src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=400&auto=format&fit=crop" 
-                  alt="Construction materials" 
-                  className="absolute bottom-0 right-0 w-32 h-32 object-cover rounded-lg opacity-80"
-                />
+                <div className="absolute -bottom-4 -right-4 w-24 h-24 rounded-lg overflow-hidden shadow-lg">
+                  <img 
+                    src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=400&auto=format&fit=crop" 
+                    alt="Construction materials" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
             </div>
           </div>

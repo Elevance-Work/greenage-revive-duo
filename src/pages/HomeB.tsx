@@ -126,87 +126,87 @@ export default function HomeB() {
         <RevealOnScroll>
           <div className="container py-16">
             <h2 className="font-heading text-3xl mb-8 text-center">Product Categories</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <div className="rounded-lg p-4 bg-gradient-to-br from-cyan-50 to-cyan-100 dark:from-cyan-950 dark:to-cyan-900 relative overflow-hidden hover-scale aspect-square">
-                <div className="relative z-10 h-full flex flex-col justify-between">
-                  <div>
-                    <p className="text-xs text-muted-foreground mb-1">Polymer Grade</p>
-                    <h3 className="font-heading text-lg font-bold text-cyan-900 dark:text-cyan-100">BUTENE</h3>
-                  </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="rounded-xl p-6 bg-gradient-to-br from-cyan-50 to-cyan-100 dark:from-cyan-950 dark:to-cyan-900 relative overflow-hidden hover-scale min-h-[180px] flex flex-col justify-between">
+                <div className="relative z-10">
+                  <p className="text-sm text-cyan-600 dark:text-cyan-400 font-medium mb-2">Polymer Grade</p>
+                  <h3 className="font-heading text-xl font-bold text-cyan-900 dark:text-cyan-100">BUTENE</h3>
+                </div>
+                <div className="absolute -bottom-3 -right-3 w-20 h-20 rounded-lg overflow-hidden shadow-lg">
                   <img 
                     src="https://images.unsplash.com/photo-1632053002934-970bd79eab95?q=80&w=300&auto=format&fit=crop" 
                     alt="Butene polymer grade" 
-                    className="w-16 h-16 object-cover rounded opacity-70 self-end"
+                    className="w-full h-full object-cover"
                   />
                 </div>
               </div>
               
-              <div className="rounded-lg p-4 bg-gradient-to-br from-emerald-50 to-emerald-100 dark:from-emerald-950 dark:to-emerald-900 relative overflow-hidden hover-scale aspect-square">
-                <div className="relative z-10 h-full flex flex-col justify-between">
-                  <div>
-                    <p className="text-xs text-muted-foreground mb-1">Polymer Grade</p>
-                    <h3 className="font-heading text-lg font-bold text-emerald-900 dark:text-emerald-100">HEXENE</h3>
-                  </div>
+              <div className="rounded-xl p-6 bg-gradient-to-br from-emerald-50 to-emerald-100 dark:from-emerald-950 dark:to-emerald-900 relative overflow-hidden hover-scale min-h-[180px] flex flex-col justify-between">
+                <div className="relative z-10">
+                  <p className="text-sm text-emerald-600 dark:text-emerald-400 font-medium mb-2">Polymer Grade</p>
+                  <h3 className="font-heading text-xl font-bold text-emerald-900 dark:text-emerald-100">HEXENE</h3>
+                </div>
+                <div className="absolute -bottom-3 -right-3 w-20 h-20 rounded-lg overflow-hidden shadow-lg">
                   <img 
                     src="https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?q=80&w=300&auto=format&fit=crop" 
                     alt="Hexene polymer grade" 
-                    className="w-16 h-16 object-cover rounded opacity-70 self-end"
+                    className="w-full h-full object-cover"
                   />
                 </div>
               </div>
               
-              <div className="rounded-lg p-4 bg-gradient-to-br from-violet-50 to-violet-100 dark:from-violet-950 dark:to-violet-900 relative overflow-hidden hover-scale aspect-square">
-                <div className="relative z-10 h-full flex flex-col justify-between">
-                  <div>
-                    <p className="text-xs text-muted-foreground mb-1">Special Grade</p>
-                    <h3 className="font-heading text-lg font-bold text-violet-900 dark:text-violet-100">RIPPLE</h3>
-                  </div>
+              <div className="rounded-xl p-6 bg-gradient-to-br from-violet-50 to-violet-100 dark:from-violet-950 dark:to-violet-900 relative overflow-hidden hover-scale min-h-[180px] flex flex-col justify-between">
+                <div className="relative z-10">
+                  <p className="text-sm text-violet-600 dark:text-violet-400 font-medium mb-2">Special Grade</p>
+                  <h3 className="font-heading text-xl font-bold text-violet-900 dark:text-violet-100">RIPPLE</h3>
+                </div>
+                <div className="absolute -bottom-3 -right-3 w-20 h-20 rounded-lg overflow-hidden shadow-lg">
                   <img 
                     src="https://images.unsplash.com/photo-1618477247222-acbdb0e159b3?q=80&w=300&auto=format&fit=crop" 
                     alt="Ripple special grade" 
-                    className="w-16 h-16 object-cover rounded opacity-70 self-end"
+                    className="w-full h-full object-cover"
                   />
                 </div>
               </div>
               
-              <div className="rounded-lg p-4 bg-gradient-to-br from-amber-50 to-amber-100 dark:from-amber-950 dark:to-amber-900 relative overflow-hidden hover-scale aspect-square">
-                <div className="relative z-10 h-full flex flex-col justify-between">
-                  <div>
-                    <p className="text-xs text-muted-foreground mb-1">Custom Solutions</p>
-                    <h3 className="font-heading text-lg font-bold text-amber-900 dark:text-amber-100">SPECIALTY</h3>
-                  </div>
+              <div className="rounded-xl p-6 bg-gradient-to-br from-amber-50 to-amber-100 dark:from-amber-950 dark:to-amber-900 relative overflow-hidden hover-scale min-h-[180px] flex flex-col justify-between">
+                <div className="relative z-10">
+                  <p className="text-sm text-amber-600 dark:text-amber-400 font-medium mb-2">Custom Solutions</p>
+                  <h3 className="font-heading text-xl font-bold text-amber-900 dark:text-amber-100">SPECIALTY</h3>
+                </div>
+                <div className="absolute -bottom-3 -right-3 w-20 h-20 rounded-lg overflow-hidden shadow-lg">
                   <img 
                     src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=300&auto=format&fit=crop" 
                     alt="Specialty polymer solutions" 
-                    className="w-16 h-16 object-cover rounded opacity-70 self-end"
+                    className="w-full h-full object-cover"
                   />
                 </div>
               </div>
               
-              <div className="rounded-lg p-4 bg-gradient-to-br from-rose-50 to-rose-100 dark:from-rose-950 dark:to-rose-900 relative overflow-hidden hover-scale aspect-square md:col-span-2">
-                <div className="relative z-10 h-full flex flex-col justify-between">
-                  <div>
-                    <p className="text-xs text-muted-foreground mb-1">Industry Applications</p>
-                    <h3 className="font-heading text-xl font-bold text-rose-900 dark:text-rose-100">WATER STORAGE</h3>
-                  </div>
+              <div className="rounded-xl p-6 bg-gradient-to-br from-rose-50 to-rose-100 dark:from-rose-950 dark:to-rose-900 relative overflow-hidden hover-scale min-h-[180px] flex flex-col justify-between md:col-span-2">
+                <div className="relative z-10">
+                  <p className="text-sm text-rose-600 dark:text-rose-400 font-medium mb-2">Industry Applications</p>
+                  <h3 className="font-heading text-2xl font-bold text-rose-900 dark:text-rose-100">WATER STORAGE</h3>
+                </div>
+                <div className="absolute -bottom-4 -right-4 w-28 h-20 rounded-lg overflow-hidden shadow-lg">
                   <img 
                     src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=300&auto=format&fit=crop" 
                     alt="Water storage applications" 
-                    className="w-20 h-16 object-cover rounded opacity-70 self-end"
+                    className="w-full h-full object-cover"
                   />
                 </div>
               </div>
               
-              <div className="rounded-lg p-4 bg-gradient-to-br from-teal-50 to-teal-100 dark:from-teal-950 dark:to-teal-900 relative overflow-hidden hover-scale aspect-square md:col-span-2">
-                <div className="relative z-10 h-full flex flex-col justify-between">
-                  <div>
-                    <p className="text-xs text-muted-foreground mb-1">Industry Applications</p>
-                    <h3 className="font-heading text-xl font-bold text-teal-900 dark:text-teal-100">OUTDOOR FURNITURE</h3>
-                  </div>
+              <div className="rounded-xl p-6 bg-gradient-to-br from-teal-50 to-teal-100 dark:from-teal-950 dark:to-teal-900 relative overflow-hidden hover-scale min-h-[180px] flex flex-col justify-between md:col-span-2">
+                <div className="relative z-10">
+                  <p className="text-sm text-teal-600 dark:text-teal-400 font-medium mb-2">Industry Applications</p>
+                  <h3 className="font-heading text-2xl font-bold text-teal-900 dark:text-teal-100">OUTDOOR FURNITURE</h3>
+                </div>
+                <div className="absolute -bottom-4 -right-4 w-28 h-20 rounded-lg overflow-hidden shadow-lg">
                   <img 
                     src="https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?q=80&w=300&auto=format&fit=crop" 
                     alt="Outdoor furniture applications" 
-                    className="w-20 h-16 object-cover rounded opacity-70 self-end"
+                    className="w-full h-full object-cover"
                   />
                 </div>
               </div>
