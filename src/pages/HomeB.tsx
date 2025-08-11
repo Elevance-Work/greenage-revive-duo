@@ -7,6 +7,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { Quote } from "lucide-react";
 import heroB from "@/assets/hero-b.jpg";
 import { Link } from "react-router-dom";
+import ContactForm from "@/components/ContactForm";
 
 export default function HomeB() {
   return (
@@ -281,6 +282,7 @@ export default function HomeB() {
           </section>
         </RevealOnScroll>
 
+        <ContactForm />
        </main>
      </>
    );

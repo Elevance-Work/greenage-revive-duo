@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Quote } from "lucide-react";
 import { Link } from "react-router-dom";
+import ContactForm from "@/components/ContactForm";
 export default function HomeA() {
   return <>
       <SEO title="GreenAge – Sustainable Rotomoulding Polymers" description="LLDPE rotomoulding powders engineered for performance, consistency, and sustainability. Explore Butene, Hexene and Ripple grades." canonical="/" />
@@ -249,6 +250,8 @@ export default function HomeA() {
             </div>
           </section>
         </RevealOnScroll>
+
+        <ContactForm />
       </main>
     </>;
 }
