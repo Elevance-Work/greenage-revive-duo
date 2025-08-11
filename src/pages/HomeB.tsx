@@ -1,6 +1,7 @@
 import SEO from "@/components/SEO";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import heroB from "@/assets/hero-b.jpg";
 import { Link } from "react-router-dom";
 
@@ -71,6 +72,55 @@ export default function HomeB() {
             </div>
           </div>
         </RevealOnScroll>
+        <RevealOnScroll>
+          <section className="py-16 bg-muted/30">
+            <div className="container">
+              <div className="grid md:grid-cols-2 gap-6">
+                <Card className="overflow-hidden hover-scale">
+                  <CardHeader>
+                    <CardTitle className="text-2xl">View our NEW Product Brochure</CardTitle>
+                    <CardDescription>Our product brochure is available to view now.</CardDescription>
+                  </CardHeader>
+                  <CardContent className="grid md:grid-cols-2 gap-4 items-center">
+                    <img
+                      src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=1200&auto=format&fit=crop"
+                      alt="Colorful brochure stack"
+                      loading="lazy"
+                      className="w-full rounded-md border object-cover"
+                    />
+                    <div className="space-y-3">
+                      <Button asChild size="lg">
+                        <Link to="/products">View brochure</Link>
+                      </Button>
+                      <p className="text-sm text-foreground/70">PDF and online catalogue.</p>
+                    </div>
+                  </CardContent>
+                </Card>
+                <Card className="overflow-hidden hover-scale">
+                  <CardHeader>
+                    <CardTitle className="text-2xl">View Our First Industry Magazine</CardTitle>
+                    <CardDescription>Expanding Horizons out now.</CardDescription>
+                  </CardHeader>
+                  <CardContent className="grid md:grid-cols-2 gap-4 items-center">
+                    <img
+                      src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0ea?q=80&w=1200&auto=format&fit=crop"
+                      alt="Open magazine with colorful splash"
+                      loading="lazy"
+                      className="w-full rounded-md border object-cover"
+                    />
+                    <div className="space-y-3">
+                      <Button asChild variant="outline" size="lg">
+                        <Link to="/news">View magazine</Link>
+                      </Button>
+                      <p className="text-sm text-foreground/70">Latest insights in rotational moulding.</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </section>
+        </RevealOnScroll>
+
       </main>
     </>
   );

@@ -62,6 +62,52 @@ export default function HomeA() {
         </RevealOnScroll>
 
         <RevealOnScroll>
+          <section className="py-16 bg-primary/5">
+            <div className="container space-y-6">
+              <div className="grid md:grid-cols-12 gap-6 rounded-lg border bg-card p-6 hover-scale">
+                <div className="md:col-span-7 self-center">
+                  <h2 className="font-heading text-2xl">View Our First Industry Magazine</h2>
+                  <p className="mt-2 text-foreground/70">Expanding Horizons out now.</p>
+                  <div className="mt-4">
+                    <Button asChild size="lg" variant="hero">
+                      <Link to="/news">View magazine</Link>
+                    </Button>
+                  </div>
+                </div>
+                <div className="md:col-span-5">
+                  <img
+                    src="https://images.unsplash.com/photo-1491841651911-c44c30c34548?q=80&w=1200&auto=format&fit=crop"
+                    alt="Industry magazine cover with vivid colors"
+                    loading="lazy"
+                    className="w-full rounded-md border object-cover"
+                  />
+                </div>
+              </div>
+
+              <div className="grid md:grid-cols-12 gap-6 rounded-lg border bg-card p-6 hover-scale">
+                <div className="md:col-span-5 order-last md:order-first">
+                  <img
+                    src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=1200&auto=format&fit=crop"
+                    alt="Product brochures in a clean layout"
+                    loading="lazy"
+                    className="w-full rounded-md border object-cover"
+                  />
+                </div>
+                <div className="md:col-span-7 self-center">
+                  <h2 className="font-heading text-2xl">View our NEW Product Brochure</h2>
+                  <p className="mt-2 text-foreground/70">Our new product brochure is available to view now!</p>
+                  <div className="mt-4">
+                    <Button asChild size="lg" variant="outline">
+                      <Link to="/products">View brochure</Link>
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </RevealOnScroll>
+
+        <RevealOnScroll>
           <div className="container py-16">
             <div className="grid md:grid-cols-4 gap-6">
               {["Water storage", "Waste management", "Furniture", "Automotive", "Agriculture", "Material handling", "Construction", "Custom applications"].map(i => <div key={i} className="rounded-lg border bg-card p-5 text-center text-sm text-foreground/80">
