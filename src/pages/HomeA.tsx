@@ -1,7 +1,7 @@
 import SEO from "@/components/SEO";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import { Button } from "@/components/ui/button";
-import heroA from "@/assets/hero-a.jpg";
+
 import { Link } from "react-router-dom";
 
 export default function HomeA() {
@@ -13,12 +13,21 @@ export default function HomeA() {
         canonical="/"
       />
       <main>
-        <section
-          className="relative min-h-[70vh] grid place-items-center overflow-hidden"
-          style={{ backgroundImage: `url(${heroA})`, backgroundSize: "cover", backgroundPosition: "center" }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-r from-background/80 to-background/40" />
-          <div className="container relative grid md:grid-cols-2 items-center gap-8 py-20">
+        <section className="relative min-h-[70vh] grid place-items-center overflow-hidden">
+          <div className="absolute inset-0 z-0 pointer-events-none">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[177.78vh] h-[100vh] min-w-full min-h-full">
+              <iframe
+                src="https://www.youtube.com/embed/Xp3nr5F1w-c?autoplay=1&mute=1&controls=0&loop=1&playlist=Xp3nr5F1w-c&modestbranding=1&playsinline=1&rel=0"
+                title="GreenAge hero background video"
+                allow="autoplay; encrypted-media; picture-in-picture"
+                referrerPolicy="strict-origin-when-cross-origin"
+                loading="lazy"
+                className="w-full h-full"
+              />
+            </div>
+          </div>
+          <div className="absolute inset-0 z-[1] bg-gradient-to-r from-background/80 to-background/40" />
+          <div className="container relative z-[2] grid md:grid-cols-2 items-center gap-8 py-20">
             <div className="animate-enter">
               <p className="text-sm uppercase tracking-widest text-foreground/70 mb-2">Sustainable polymer solutions</p>
               <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl leading-tight">
