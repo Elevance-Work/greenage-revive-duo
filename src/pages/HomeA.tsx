@@ -64,7 +64,7 @@ export default function HomeA() {
         <RevealOnScroll>
           <section className="py-16 bg-primary/5">
             <div className="container space-y-6">
-              <div className="grid md:grid-cols-12 gap-6 rounded-lg border bg-card p-6 hover-scale">
+              <div className="grid md:grid-cols-12 gap-6 rounded-lg border bg-card p-6 hover-scale justify-items-start text-left">
                 <div className="md:col-span-7 self-center">
                   <h2 className="font-heading text-2xl">View Our First Industry Magazine</h2>
                   <p className="mt-2 text-foreground/70">Expanding Horizons out now.</p>
